@@ -16,6 +16,7 @@
         font-family: 'Public Sans', sans-serif;
         font-size: 1.6rem;
         line-height: 3rem;
+        cursor: wait;
     }
 
     h1 {
@@ -44,6 +45,8 @@
         font-size: 1.5rem;
         line-height: 3rem;
     }
+
+    
 }
 
 
@@ -59,4 +62,6 @@
     .mobile {
         @apply px-[3.2rem] mt-[3.2rem] mb-[4rem]
     }
+
 }
+
