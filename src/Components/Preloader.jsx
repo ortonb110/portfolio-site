@@ -16,7 +16,7 @@ const Preloading = () => {
 
 
   return (
-    <motion.div initial='initial ' exit='exit' variants={slideUp} className="global absolute left-0 top-0 z-50  bg-black text-white flex items-center justify-center h-[100vh] w-full">
+    <motion.div initial='initial ' exit='exit' variants={slideUp} className="global fixed left-0 top-0 z-50  bg-black text-white flex items-center justify-center h-[100vh] w-full">
       <motion.p initial='initial' animate='enter' variants={opacity}  className='flex gap-4 items-center align-center'><span className=' w-[1rem] h-[1rem] rounded-full bg-white inline-block'></span><span>{words[index]}</span></motion.p>
     </motion.div>
   );

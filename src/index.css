@@ -51,7 +51,7 @@
     }
 
     .small {
-        @apply absolute right-[3.2rem] top-[5rem] flex flex-col w-[22.3rem] items-center justify-center gap-[3.2rem] py-[4rem] bg-primaryGreyishBlue text-white
+        @apply absolute right-[3.2rem] top-[5rem] flex flex-col w-[22.3rem] items-center justify-center gap-[3.2rem] py-[4rem] bg-primaryGreyishBlue text-white 
     }
 }
 

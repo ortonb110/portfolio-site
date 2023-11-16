@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const NavigationBar = () => {
   const [open, setOpen] = useState(false);
@@ -9,8 +10,8 @@ const NavigationBar = () => {
   };
 
   return (
-    <nav className={`mobile md:tablet lg:desktop relative md:static`}>
-      <div className="flex justify-between items-center">
+    <header className={`mobile md:tablet xl:desktop relative md:static`}>
+      <nav className="flex justify-between items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
           <path
             fill="#33323D"
@@ -19,32 +20,42 @@ const NavigationBar = () => {
           />
         </svg>
 
-        <section
+        <motion.section
           className={`${
-            open
-              ? "max-md:small"
-              : "hidden"
-          }     hidden md:flex md:justify-between md:gap-[4.2rem] uppercase text-[1.2rem] tracking-[2px]`}
+            open ? "max-md:small" : "hidden"
+          }     hidden md:flex md:justify-between md:gap-[4.2rem] uppercase text-[1.2rem] tracking-[2px] z-50`}
         >
           <NavLink
             to={"/"}
-            className={({ isActive }) => (isActive ? "text-primary" : "")}
+            className={({ isActive }) =>
+              isActive
+                ? "text-primary hover:text-primary anim"
+                : "hover:text-primary anim"
+            }
           >
             home
           </NavLink>
           <NavLink
             to={"/portfolio"}
-            className={({ isActive }) => (isActive ? "text-primary" : "")}
+            className={({ isActive }) =>
+              isActive
+                ? "text-primary hover:text-primary anim"
+                : "hover:text-primary anim"
+            }
           >
             portfolio
           </NavLink>
           <NavLink
             to={"/contact"}
-            className={({ isActive }) => (isActive ? "text-primary" : "")}
+            className={({ isActive }) =>
+              isActive
+                ? "text-primary hover:text-primary anim"
+                : "hover:text-primary anim"
+            }
           >
             contact me
           </NavLink>
-        </section>
+        </motion.section>
         <button
           className={`md:hidden flex flex-col ${
             open ? "gap-[0px]" : "gap-[4px]"
@@ -67,8 +78,8 @@ const NavigationBar = () => {
             } anim`}
           ></span>
         </button>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 
