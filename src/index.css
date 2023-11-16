@@ -69,5 +69,8 @@
         @apply px-[3.2rem] mt-[3.2rem] mb-[4rem]
     }
 
+    .btn {
+        @apply uppercase flex items-center text-[1.2rem] 
+    }
 }
 
