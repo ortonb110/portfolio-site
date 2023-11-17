@@ -6,14 +6,14 @@ const Hero = () => {
   return (
     <main className="mobile md:tablet xl:desktop h-[60rem] w-full ">
       <section className="md:bg-tablet lg:bg-desktop xl:bg-desktopXL bg-no-repeat w-full h-full bg-top bg-cover  relative ">
-        <div className="md:hidden ">
+        <div className="md:hidden mb-[2.4rem] md:mb-0">
           <img src={backgroundImage} aria-hidden />
         </div>
         <div className="md:bg-white md:w-[51.4rem] xl:w-[44.5rem] md:h-[27.8rem] xl:h-[35.7rem] md:absolute bottom-0 left-0 md:pt-[5.6rem] flex md:block flex-col justify-center items-center md:items-start">
           <h1 className="hidden md:block">
             Hey, I'm Orton Bright and I love building beautiful Websites
           </h1>
-          <h2 className="md:hidden text-center">
+          <h2 className="md:hidden text-center mb-[3.2rem]">
             Hey, I'm Orton Bright and I love building beautiful Websites
           </h2>
           <NavLink
