@@ -1,10 +1,8 @@
 import backgroundImage from "../assets/images/homepage/mobile/image-homepage-hero@2x.jpg";
-import { NavLink } from "react-router-dom";
-import defaultBtn from "./defaultBtn";
 
 const Hero = () => {
   return (
-    <main className="mobile md:tablet xl:desktop h-[60rem] w-full ">
+    <main className="mobile md:tablet xl:desktop md:h-[60rem] w-full ">
       <section className="md:bg-tablet lg:bg-desktop xl:bg-desktopXL bg-no-repeat w-full h-full bg-top bg-cover  relative ">
         <div className="md:hidden mb-[2.4rem] md:mb-0">
           <img src={backgroundImage} aria-hidden />
