@@ -1,9 +1,11 @@
 import Hero from "../Components/Hero"
+import About from "../Components/About"
 
 const Home = () => {
   return (
-    <div className='h-[150vh]'>
+    <div className=''>
       <Hero/>
+      <About/>
     </div>
   )
 }

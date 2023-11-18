@@ -23,7 +23,7 @@ const NavigationBar = () => {
         <motion.section
           className={`${
             open ? "max-md:small" : "hidden"
-          }     hidden md:flex md:justify-between md:gap-[4.2rem] uppercase text-[1.2rem] tracking-[2px] z-50`}
+          }     hidden md:flex md:justify-between md:gap-[4.2rem] uppercase text-[1.2rem] tracking-[2px] z-30`}
         >
           <NavLink
             to={"/"}

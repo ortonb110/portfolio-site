@@ -16,7 +16,7 @@ const Hero = () => {
           <h2 className="md:hidden text-center mb-[3.2rem]">
             Hey, I'm Orton Bright and I love building beautiful Websites
           </h2>
-          <NavLink
+          <button
             to={"/about"}
             className={`btn bg-primaryDarkBlue text-white group hover:bg-primary transition-all ease-in-out duration-200 md:absolute bottom-0`}
           >
@@ -30,9 +30,9 @@ const Hero = () => {
               </svg>
             </span>
             <span className="px-[3.8rem] py-[1.2rem] tracking-[2px]">
-              about me
+              resume
             </span>
-          </NavLink>
+          </button>
         </div>
       </section>
     </main>
