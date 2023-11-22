@@ -28,7 +28,7 @@ const Hero = () => {
               </svg>
             </span>
             <span className="px-[3.8rem] py-[1.2rem] tracking-[2px]">
-              resume
+              download resume
             </span>
           </button>
         </div>
