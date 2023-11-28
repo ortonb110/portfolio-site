@@ -70,7 +70,11 @@
     }
 
     .btn {
-        @apply uppercase flex items-center text-[1.2rem] 
+        @apply uppercase flex items-center text-[1.2rem]
+    }
+
+    .btnDefault {
+        @apply border-[1px] text-center uppercase text-[1.2rem] tracking-[2px] font-normal px-[3.2rem] py-[1.7rem] transition-all ease-in-out duration-200
     }
 }
 
