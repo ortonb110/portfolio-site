@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-
 const SubFooter = () => {
   return (
     <section className="mobile md:tablet xl:desktop md:flex flex-col justify-center md:flex-row md:justify-between md:items-center xl:space-x-[3.2rem] lg:space-x-[2.2rem] md:space-x-[1rem]">
@@ -11,6 +10,7 @@ const SubFooter = () => {
     <NavLink to={'/contact'} className={`btnDefault border-primaryGreyishBlue hover:bg-primaryGreyishBlue hover:text-white`}>
         contact me
     </NavLink>
+    
     </section>
   );
 };
